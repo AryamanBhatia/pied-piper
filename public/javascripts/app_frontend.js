@@ -13,7 +13,7 @@ submitButton.addEventListener('submit', (e) => {
     const credit_cardinfo = user_credit_cardinfo.value
 
     console.log(credit_cardinfo)
-    fetch('http://localhost:3000/process_creditcard?creditcard=' + credit_cardinfo).then((response) => {
+    fetch('/process_creditcard?creditcard=' + credit_cardinfo).then((response) => {
         response.json().then((data) => {
             return_value.textContent = data.products
         })
@@ -26,7 +26,7 @@ deleteButton.addEventListener('click', (e) => {
 
     const credit_cardinfo = user_credit_cardinfo.value
 
-    fetch('http://localhost:3000/delete_creditcard?creditcard=' + credit_cardinfo).then((response) => {
+    fetch('/delete_creditcard?creditcard=' + credit_cardinfo).then((response) => {
         response.json().then((data) => {
             return_value.textContent = data.products
         })
@@ -42,7 +42,7 @@ viewButton.addEventListener('click', (e) => {
 
     const credit_cardinfo = user_credit_cardinfo.value
 
-    fetch('http://localhost:3000/view_creditcard?creditcard=' + credit_cardinfo).then((response) => {
+    fetch(' /view_creditcard?creditcard=' + credit_cardinfo).then((response) => {
         console.log('hello attu')
         response.json().then((data) => {
             var json = JSON.stringify(data)
