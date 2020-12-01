@@ -1,10 +1,19 @@
+html {
+  font-size: 64px;
+  font-family: 'Oswald', sans-serif;
+}
+
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 100 bold He;
+  text-align: center;
 }
 
 a {
   color: #00B7FF;
 }
 
-
+image {
+  display: block;
+  margin: auto;
+}
