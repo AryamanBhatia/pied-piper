@@ -1,7 +1,9 @@
 const mongoose = require('mongoose')
 
 console.log('before connect') 
-const uri = "mongodb+srv://aryaman:attu123@cluster0.gai9t.mongodb.net/cc_db?retryWrites=true&w=majority"
+const uri = process.env.MONGODB
+console.log(uri)
+
 mongoose.connect(uri, {
     useNewUrlParser: true,
     useCreateIndex: true
