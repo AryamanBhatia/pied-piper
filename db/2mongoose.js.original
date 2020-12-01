@@ -1,0 +1,26 @@
+const mongoose = require('mongoose')
+
+mongoose.connect('mongodb://127.0.0.1:27017/cc_db', {
+    useNewUrlParser: true,
+    useCreateIndex: true
+})
+
+const User = mongoose.model('User', {
+    name: {
+        type: String
+    },
+    cc: {
+        type: Number
+    }
+})
+
+const me = new User({
+    name: 'Ary',
+    cc: 32939239239239
+})
+
+me.save().then(() => {
+    console.log(me)
+}).catch((error) => {
+    console.log('Error!', error)
+})
