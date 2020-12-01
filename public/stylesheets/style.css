@@ -5,15 +5,10 @@ html {
 
 body {
   padding: 50px;
-  font: 100 bold He;
+  font: 100 bold;
   text-align: center;
 }
 
 a {
   color: #00B7FF;
-}
-
-image {
-  display: block;
-  margin: auto;
 }

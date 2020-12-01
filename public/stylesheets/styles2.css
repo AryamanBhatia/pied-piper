@@ -1,0 +1,22 @@
+html {
+    font-size: 32px;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    padding: 50px;
+    font: 100 bold;
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid #888888;
+    background: #888888;
+    color: white;
+    padding: 8px;
+}
+
+input {
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
